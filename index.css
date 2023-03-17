@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  /* width: 100%; */
+  font-family: "Dovemayo_gothic";
+}
+
+h1 {
+  margin-left: 20px;
+  padding: 10px;
+  color: #539165;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #fefae0;
+  position: relative;
+}
+
+#btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 10vh 0;
+  background-color: #ccd5ae;
+}
+
+#btns #start {
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 40px;
+  background-color: #e9edc9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Dovemayo_gothic";
+}
+
+#btns .countBox,
+#btns .sizeBox {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.makeSize {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.makeSize input {
+  width: 15%;
+}
+
+.makeSize #make {
+  margin-left: 2%;
+  background-color: #fefae0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Dovemayo_gothic";
+}
+
+#btns .imgBox {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.imgBox label {
+  display: inline;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #faedcd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fileName {
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#imgInput {
+  display: none;
+}
+
+.hintImg {
+  width: 30vw;
+  height: 50vh;
+  margin: 10vh;
+  position: absolute;
+  left: 20%;
+  display: none;
+}
+
+.btnBox {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hint,
+.changeNum,
+.changeImg {
+  display: inline;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #e9edc9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Dovemayo_gothic";
+}
+
+#puzzle {
+  width: 30vw;
+  height: 50vh;
+  margin: 10vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.piece {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 60px;
+  line-height: 0;
+}
+
+.piece:hover {
+  cursor: pointer;
+}
+
+.piece canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+      <link
+      rel="styleSheet"
+      href="index.css" />
+      <title>PUZZLE</title>
+      
+  </head>
+  <body>
+    <h1>슬라이딩 퍼즐</h1>
+    <main>
+      <section id="btns">
+        <button id="start">START</button>
+        <div class="countBox">
+          <div>count:</div>
+          <div class="count">0</div>
+        </div>
+        <div class="sizeBox">
+          <div>size:</div>
+          <div class="makeSize">
+            <input
+              class="zig"
+              value="3" />x
+            <input
+              class="zag"
+              value="3" />
+            <button id="make">MAKE</button>
+          </div>
+        </div>
+        <div class="imgBox">
+          <label for="imgInput">UPLOAD</label>
+          <div class="fileName"></div>
+        </div>
+        <input
+          type="file"
+          id="imgInput"
+          accept="" />
+        <div class="btnBox">
+          <button class="hint">IMG HINT</button>
+          <button class="changeNum">NUMBER</button>
+          <button class="changeImg">IMAGE</button>
+        </div>
+      </section>
+
+      <section id="puzzle"></section>
+      <img class="hintImg" />
+    </main>
+    <script src="index.js" defer></script>
+  </body>
+</html>
